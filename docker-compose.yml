@@ -11,6 +11,5 @@ services:
     restart: unless-stopped
     ports:
       - 4001:3000
-
     environment:
       DELIVER_RESULTS_ENDPOINT: ${DELIVER_RESULTS_ENDPOINT}
