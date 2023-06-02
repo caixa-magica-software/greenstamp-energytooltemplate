@@ -10,6 +10,7 @@ services:
       dockerfile: Dockerfile
     restart: unless-stopped
     ports:
-      - 3333:3000
+      - 4001:3000
+
     environment:
       DELIVER_RESULTS_ENDPOINT: ${DELIVER_RESULTS_ENDPOINT}
