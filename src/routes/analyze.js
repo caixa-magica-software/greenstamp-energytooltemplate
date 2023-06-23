@@ -56,7 +56,7 @@ const doTests = (tests) => {
     name: test.name,
     parameters: test.parameters,
     result: Math.floor(Math.random() * (100 - 10 + 1) + 10),
-    unit: "Wh"
+    unit: "detections"
   }))
 }
 
