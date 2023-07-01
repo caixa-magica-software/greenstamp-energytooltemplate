@@ -61,7 +61,7 @@ const doTests = (tests) => {
     parameters: test.parameters,
     result: Math.floor(Math.random() * (100 - 10 + 1) + 10),
     unit: "detections",
-    optional: testTime,
+    optional: testTime.toFixed(3),
   }))
 }
 
