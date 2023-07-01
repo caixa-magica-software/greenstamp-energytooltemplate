@@ -52,11 +52,16 @@ const execute = (appName, packageName, version, tests) => {
 }
 
 const doTests = (tests) => {
+  //const timeoutStart = Date.now()
+  var testTime = 0
+  //console.log("Test time (ms): " + (Date.now() - timeoutStart) ) // Test time in seconds
+  //console.log("Test time (minutes): " + (Date.now() - timeoutStart) / 1000 / 60) // Test time in minutes
   return tests.map(test => ({
     name: test.name,
     parameters: test.parameters,
     result: Math.floor(Math.random() * (100 - 10 + 1) + 10),
-    unit: "detections"
+    unit: "detections",
+    time: testTime,
   }))
 }
 
